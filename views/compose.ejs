@@ -1,10 +1,14 @@
 <%-include("header")-%>
     <h1>Compose</h1>
+    <!-- In order to pass whatever we typed in textbox to app.js ie to make it a post request we need to put it inside the form  -->
+    <!-- action /compose -- whatever data is inside the form is actually submitted to whichever action is specified there -->
+    <!-- post request to compose route -->
     <form class="" action="/compose" method="post">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Title</label>
             <input type="text" name="blog" autocomplete="off" class="form-control" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
+                <!-- input must have a name ..we will use it as variable -->
 
         </div>
         <div class="mb-3">
